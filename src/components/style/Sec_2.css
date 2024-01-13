@@ -1,0 +1,22 @@
+.mn-bx{
+    width: 100%;
+    height: 150px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bx{
+    display: flex;
+    
+    align-items: center;
+    width: 13%;
+   
+}
+.bx-cl-1{
+    font-size: 28px;
+  display: flex;
+}
+.bx-cl-2{
+    margin-left: 10px;
+}

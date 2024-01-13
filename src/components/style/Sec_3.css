@@ -1,0 +1,22 @@
+.bg-body-tertiary{
+    width: 80%;
+    margin: auto;
+    background-color: #000 !important;
+   
+.navbar-brand{
+    color: #fff !important;
+    letter-spacing: 3px !important;
+    font-weight: bold;
+}
+}
+.container{
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 400px !important;
+}
+.nw-container{
+    width: 100%;
+    padding: 20px 0px;
+    
+    background-color: #000;
+}

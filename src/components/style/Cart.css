@@ -1,0 +1,14 @@
+.empty-box{
+    
+    width: 80%;
+    height: 150px;
+    border: 2px solid #6c6c6c57;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-items{
+    width: 90%;
+    margin: 40px auto;
+}

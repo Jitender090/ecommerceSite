@@ -1,0 +1,50 @@
+.header-sec{
+    width: 90%;
+    /* background-color: aquamarine; */
+    margin: auto;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+.links-tab{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.icon-tp{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 30px;
+}
+.login .link, .cart .link{ 
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.cart{
+    position: relative;
+
+
+}
+.status{
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #808080;
+    color: #fff;
+    font-size: 10px;
+}
