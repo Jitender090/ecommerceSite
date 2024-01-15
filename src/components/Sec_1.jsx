@@ -14,7 +14,7 @@ export default function Sec_1() {
         </p>
         <div className="s1-content">
           <div className="box1">
-            <img src="/images/166306363884png.png" className="box-img" alt="" />
+            <img src="/images/166306363884png.png" className="box-img" alt="Image"  loading="lazy"/>
             <div className="box-content1">
               <p>Sale Up To 30%</p>
               <h3>Mens Collection</h3>
@@ -22,7 +22,7 @@ export default function Sec_1() {
             </div>
           </div>
           <div className="box">
-            <img src="/images/166306365085png.png" className="box-img" alt="" />
+            <img src="/images/166306365085png.png" className="box-img" alt="Image"  loading="lazy"/>
             <div className="box-content">
               <p>Sale Up To 50%</p>
               <h3> EXO TRAVEL BAGS</h3>
@@ -30,7 +30,7 @@ export default function Sec_1() {
             </div>
           </div>
           <div className="box">
-            <img src="/images/166306009486png.png" className="box-img" alt="" />
+            <img src="/images/166306009486png.png" className="box-img" alt="Image" loading="lazy" />
             <div className="box-content">
               <p>Sale Up To 70%</p>
               <h3>NEW ARRIVALS</h3>

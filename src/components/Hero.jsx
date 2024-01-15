@@ -13,7 +13,8 @@ export default function Hero() {
           <img
               className="slider-imagehr"
               src="/images/16474305667png.png"
-              alt=""
+              alt="Slider Image"
+              loading="lazy"
             />
          
             <Carousel.Caption>
@@ -30,7 +31,8 @@ export default function Hero() {
           <img
               className="slider-imagehr"
               src="/images/164743050917png.png"
-              alt=""
+              alt=" Slider Image-2"
+              loading="lazy"
             />
          
             <Carousel.Caption>
@@ -47,7 +49,8 @@ export default function Hero() {
           <img
               className="slider-imagehr"
               src="/images/164743055618png.png"
-              alt=""
+              alt="Slider Image-3"
+              loading="lazy"
             />
          
             <Carousel.Caption>

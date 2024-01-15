@@ -25,17 +25,7 @@ export default function Product({userData,handlechange}) {
     console.log(product);
       dispatch(add(product))
     }
-  // console.log(userData)
-  // const [userData, setUserData] = useState([]);
-  // useEffect(() => {
-  //   const fetchProduct = async () => {
-  //     const response = await fetch("https://fakestoreapi.com/products");
-  //     const data = await response.json();
-  //     setUserData(data);
-  //     console.log(data);
-  //   };
-  //   fetchProduct();
-  // }, []);
+ 
   return (
     <>
       {/* <UserContext.Provider value={userData}> */}

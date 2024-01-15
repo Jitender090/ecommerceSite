@@ -52,7 +52,7 @@ export default function Featureproduct() {
 
               <div className="card-sec" key={data.id}>
                 <div className="img-sec">
-                  <img src={data.image} alt="" />
+                  <img src={data.image} alt="Product Image" loading="lazy" />
                 </div>
                 <div className="details">
                   <span className="title">{data.title}</span>

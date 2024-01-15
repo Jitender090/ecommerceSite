@@ -46,7 +46,7 @@ export default function Productdetail({ userData }) {
         </div>
         <div className="pd-sec">
           <div className="pd-img-sec">
-            <img src={userData[ID - 1].image} alt="" />
+            <img src={userData[ID - 1].image} alt="Image"  loading="lazy"/>
           </div>
           <div className="pd-txt-sec">
             <p>
