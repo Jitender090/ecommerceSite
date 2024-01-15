@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import "./style/Featureproduct.css";
 
-import { add } from '../Store/cartslice'
+import { add } from '../Store/cartSlice'
 import { useDispatch } from 'react-redux'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

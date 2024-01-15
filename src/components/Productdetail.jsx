@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./style/Productdetail.css";
 import { Button } from "react-bootstrap";
-import { add } from '../Store/cartslice'
+import { add } from '../Store/cartSlice'
 import { useDispatch } from 'react-redux'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

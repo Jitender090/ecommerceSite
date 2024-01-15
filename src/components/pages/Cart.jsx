@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
 import '../style/Cart.css'
 
-import { remove } from '../../Store/cartslice';
+import { remove } from '../../Store/cartSlice';
 export const Cart = () => {
   // const count = useContext(UserContext);
   // console.log(typeof(count));
