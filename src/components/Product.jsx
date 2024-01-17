@@ -54,9 +54,9 @@ export default function Product({userData,handlechange}) {
                 <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("jewelery")} >Jewelery</Button>
                 <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("phone")} >Phone</Button>
                 <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("automobiles")} >Automobiles</Button>
-                <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("")} >Outdoor</Button>
+                <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("outdoor")} >Outdoor</Button>
                 <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("jewelery")} >Fashion & Beauty </Button>
-                <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("")} >Books & Offices</Button>
+                <Button className="product-cl-sec-tp-link"    onClick={()=>handlechange("books")} >Books & Offices</Button>
               </div>
             </div>
             <div className="product-sec-hd">
