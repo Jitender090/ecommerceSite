@@ -84,7 +84,15 @@ export default function Product({userData,handlechange}) {
                         {/* <span className="descr">{data.description}</span> */}
                         <span className="price">Price: ${data.price}</span>
                         <div className="opt">
-                          <Button variant="success">Buy Now</Button>{" "}
+                        <Link to='/cart'>
+                        {" "}
+                        <Button
+                          variant="success"
+                          onClick={() => productAdd(data)}
+                        >
+                          Buy Now
+                        </Button>
+                      </Link>{" "}
                           <Button variant="success" onClick={()=>productAdd(data)}>Add To Cart</Button>{" "}
                         </div>
                       </div>

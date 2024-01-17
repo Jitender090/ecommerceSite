@@ -59,7 +59,15 @@ export default function Productdetail({ userData }) {
               <Button onClick={()=>productAdd(userData[ID-1])}>
                 ADD TO CART{" "}
               </Button>
-              <Button>BUY NOW </Button>
+              <Link to='/cart'>
+                        {" "}
+                        <Button
+                          variant="success"
+                          onClick={() => productAdd(data)}
+                        >
+                          Buy Now
+                        </Button>
+                      </Link>
             </div>
             <span>Report this item</span>
           </div>
