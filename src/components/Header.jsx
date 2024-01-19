@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 export default function Header() {
   const {cart}=useSelector((state)=>state.cart);
   return (
-    <>
+    <div className="head">
       <div className="header-sec">
         <div className="logo">
           <Link className="link " to="/">
@@ -42,6 +42,6 @@ export default function Header() {
          
         </div>
       </div>
-    </>
+    </div>
   );
 }
