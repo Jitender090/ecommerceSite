@@ -1,21 +1,33 @@
 import React, { useContext } from "react";
+import { useEffect } from "react";
 import { UserContext } from "../UserContext";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "../style/Cart.css";
 
-import { remove } from "../../Store/cartSlice";
+import {
+  getCartTotal,
+  removeItem,
+  decreaseItemQuantity,
+  increaseItemQuantity,
+} from "../../Store/cartSlice";
 export const Cart = () => {
-  // const count = useContext(UserContext);
-  // console.log(typeof(count));
-  const items = useSelector((state) => state.cart);
+  const { cart, totalQuantity, totalPrice } = useSelector(
+    (state) => state.cart
+   
+  );
+  console.log(cart)
   const dispatch = useDispatch();
   const handleRemove = (id) => {
-    dispatch(remove(id));
+    dispatch(removeItem(id));
   };
-  console.log("mycartpage", items);
-  if (items.length === 0) {
+
+  useEffect(() => {
+    dispatch(getCartTotal());
+  }, [cart]);
+
+  if (cart.length === 0) {
     return (
       <>
         <div className="product-cl1">
@@ -48,11 +60,18 @@ export const Cart = () => {
       </div>
       <div className="cart-sec">
         <div className="cart-items">
-          {items.map((e, index) => (
+          {cart.map((e, index) => (
             <div className="cart-container" key={index}>
-             
               <img src={e.image} alt="Product Image" />
-              <span>Quantity</span>
+              <div className="quantity-sec">
+                {/* <button onClick={() => dispatch(decreaseItemQuantity(cart.id))}>
+                  -
+                </button> */}
+                <span>{e.cartQuantity}</span>
+                {/* <button onClick={() => dispatch(increaseItemQuantity(cart.id))}>
+                  +
+                </button> */}
+              </div>
               <span className="cart-p-txt">{e.title}</span>
               <span className="cart-price">${e.price}</span>
               <button className="cart-btn" onClick={() => handleRemove(e.id)}>
@@ -66,7 +85,7 @@ export const Cart = () => {
           <div className="price-sec">
             <div className="price-cl-sec">
               <span>Price</span>
-              <span>$60000</span>
+              <span>${totalPrice}</span>
             </div>
             <div className="price-cl-sec">
               <span>Delivery Charges</span>
@@ -78,7 +97,7 @@ export const Cart = () => {
             </div>
             <div className="price-cl-sec pr">
               <h4>Total Payable</h4>
-              <h4>$60058</h4>
+              <h4>${totalPrice+58}</h4>
             </div>
           </div>
           <h6>Your Total Savings on this order $100</h6>

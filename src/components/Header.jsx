@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useSelector } from 'react-redux';
 
 export default function Header() {
-  const items=useSelector((state)=>state.cart);
+  const {cart}=useSelector((state)=>state.cart);
   return (
     <>
       <div className="header-sec">
@@ -29,7 +29,7 @@ export default function Header() {
           <div className="cart">
             <Link className="link" to="/cart">
               <AiOutlineShoppingCart />
-              <span className="status"> {items.length}</span>
+              <span className="status"> {cart.length}</span>
             </Link>
           </div>
           <div className="login">

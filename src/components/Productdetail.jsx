@@ -4,7 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import "./style/Productdetail.css";
 import { Button } from "react-bootstrap";
-import { add } from '../Store/cartSlice'
+import { addToCart} from '../Store/cartSlice'
 import { useDispatch } from 'react-redux'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -30,7 +30,7 @@ export default function Productdetail({ userData }) {
       theme: "dark",
       });
     console.log(product);
-      dispatch(add(product))
+      dispatch(addToCart(product))
     }
   return (
     <>

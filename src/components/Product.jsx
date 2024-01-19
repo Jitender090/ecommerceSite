@@ -2,7 +2,7 @@ import React, { useState, useContext, createContext, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./style/Product.css";
-import {add} from '../Store/cartSlice'
+import {addToCart} from '../Store/cartSlice'
 import { useDispatch } from 'react-redux'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,8 +22,8 @@ export default function Product({userData,handlechange}) {
       progress: undefined,
       theme: "dark",
       });
-    console.log(product);
-      dispatch(add(product))
+    // console.log(product);
+      dispatch(addToCart(product))
     }
  
   return (
