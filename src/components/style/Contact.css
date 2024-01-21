@@ -95,3 +95,21 @@ textarea{
     width: 150px;
     letter-spacing: 1px;
 }
+@media (max-width:800px) {
+    .dt-sec{
+        width: 100%;
+    }
+    .txt-1{
+        text-align: center;
+    }
+    .get-sec{
+width: 90%;
+margin: auto;
+    }
+    .sec-1{
+        flex-direction: column;
+    }
+    .nm-sec,.eml-sec{
+        width: 100%;
+    }
+}

@@ -77,7 +77,7 @@
     display: block;
     width: 100%;
   }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     .login-box {
       flex-direction: column;
       box-shadow: none;
@@ -89,4 +89,17 @@
     #login-form {
       max-width: 100%;
     }
+    .form_page{
+      width: auto;
+          }
+  }
+
+  @media (max-width:600px) {
+    .illustration-wrapper{
+      display: none;
+    }
+    .form_page{
+width: 100%;
+    }
+    
   }

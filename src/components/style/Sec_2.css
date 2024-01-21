@@ -20,3 +20,16 @@
 .bx-cl-2{
     margin-left: 10px;
 }
+
+@media (max-width:800px) {
+    .mn-bx{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0px;
+    }
+    .bx{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

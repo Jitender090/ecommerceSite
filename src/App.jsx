@@ -30,7 +30,7 @@ function App() {
       const response = await fetch("https://fakestoreapi.com/products");
       const data = await response.json();
       setUserData(data);
-      // console.log(data);
+      console.log(data);
       setFilter(data);
     };
     fetchProduct();

@@ -14,8 +14,7 @@ export default function Sec_3() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container >
         <Navbar.Brand >SIGN UP TO NEWSLATTER</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+       
           
           <Form className="d-flex">
             <Form.Control
@@ -26,7 +25,7 @@ export default function Sec_3() {
             />
             <Button variant="outline-success">Send</Button>
           </Form>
-        </Navbar.Collapse>
+       
       </Container>
     </Navbar>
     </div>

@@ -12,11 +12,16 @@
 .container{
     display: flex !important;
     justify-content: space-between !important;
-    gap: 400px !important;
+    /* gap: 400px !important; */
 }
 .nw-container{
     width: 100%;
     padding: 20px 0px;
     
     background-color: #000;
+}
+@media (max-width:800px) {
+    .container{
+        gap: 15px !important;
+    }
 }

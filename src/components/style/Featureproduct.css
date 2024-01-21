@@ -80,3 +80,15 @@
     justify-content: space-between;
     gap: 15px;
 }
+
+@media (max-width:800px) {
+    .fp-container h1{
+        font-size: 25px;
+    }
+    .card-cl{
+        flex-direction: column;
+    }
+    .card-sec{
+        width: 100%;
+    }
+}

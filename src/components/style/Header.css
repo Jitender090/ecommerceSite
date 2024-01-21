@@ -57,3 +57,14 @@
     color: #fff;
     font-size: 10px;
 }
+@media (max-width:800px) {
+    .header-sec{
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        padding: 10px 0px;
+    }
+    .links-tab{
+        margin: auto;
+    }
+}
