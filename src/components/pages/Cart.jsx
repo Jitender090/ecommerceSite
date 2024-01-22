@@ -99,7 +99,7 @@ export const Cart = () => {
             </div>
             <div className="price-cl-sec">
               <span>Packaging Charge</span>
-              <span>$58</span>
+              <span>$8</span>
             </div>
             <div className="price-cl-sec pr">
               <h4>Total Payable</h4>
@@ -107,7 +107,7 @@ export const Cart = () => {
             </div>
           </div>
           {/* <h6>Your Total Savings on this order $100</h6> */}
-          <Button variant="success" onClick={handlePayment}>Checkout</Button>
+          <Button variant="success" >Checkout</Button>
         </div>
       </div>
     </div>
