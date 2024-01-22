@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "../style/Cart.css";
+import { Button } from "react-bootstrap";
+
 
 import {
   getCartTotal,
@@ -46,6 +48,10 @@ export const Cart = () => {
       </>
     );
   }
+  
+
+  
+
 
   return (
     <div>
@@ -100,7 +106,8 @@ export const Cart = () => {
               <h4>${totalPrice+58}</h4>
             </div>
           </div>
-          <h6>Your Total Savings on this order $100</h6>
+          {/* <h6>Your Total Savings on this order $100</h6> */}
+          <Button variant="success" onClick={handlePayment}>Checkout</Button>
         </div>
       </div>
     </div>
