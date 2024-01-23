@@ -20,6 +20,8 @@ import Review from "./components/pages/Review";
 import Policy from "./components/pages/Policy";
 import { Cart } from "./components/pages/Cart";
 import Error from "./components/Error";
+import Register from "./components/Register";
+import Deploy from "./components/Deploy";
 
 function App() {
   const [userData, setUserData] = useState([]);
@@ -79,6 +81,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/cart" element={<Cart/>}/>
             <Route path="*" element={<Error/>}/>
+            <Route path="/register" element={<Register/>}/>
+            <Route path="/deploy" element={<Deploy/>}/>
           </Routes>
 
           <Sec_3 />

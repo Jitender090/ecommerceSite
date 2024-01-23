@@ -107,7 +107,9 @@ export const Cart = () => {
             </div>
           </div>
           {/* <h6>Your Total Savings on this order $100</h6> */}
-          <Button variant="success" >Checkout</Button>
+          <Button variant="success" >
+            <Link to="/deploy"></Link>
+          </Button>
         </div>
       </div>
     </div>

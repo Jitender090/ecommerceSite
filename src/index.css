@@ -3,3 +3,4 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import 'mdb-ui-kit/mdb-ui-kit/src/scss/mdb.free.scss';
